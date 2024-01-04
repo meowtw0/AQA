@@ -14,11 +14,9 @@ public class ReaderFile {
     static void processFile(String filename) throws FileProcessingException {
         try {
             readFile(filename);
-            // Ваша обробка даних тут
         } catch (IOException e) {
             throw new FileProcessingException("Помилка читання файлу", e);
         } catch (RuntimeException e) {
-            // Обробка неперехоплених виразів
             System.err.println("Unchecked Exception caught: " + e.getMessage());
         }
     }
