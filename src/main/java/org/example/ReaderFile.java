@@ -6,7 +6,7 @@ import java.io.IOException;
 public class ReaderFile {
     public static void main(String[] args) {
         try {
-            processFile("Major_Arcana.txt");
+            processFile("Arcana.txt");
         } catch (FileProcessingException e) {
             System.err.println("Exception: " + e.getMessage());
         }
